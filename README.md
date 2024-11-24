@@ -1,7 +1,7 @@
 
  **Cenários em BDD**
  
- ** Feature: Login
+ **Feature: Login
 
  > * Scenario: Login com credenciais válidas
     Given que o usuário está na página de login
