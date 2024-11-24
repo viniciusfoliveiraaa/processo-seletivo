@@ -4,10 +4,15 @@
  **Feature: Login**
 
  > * Scenario: Login com credenciais válidas
+
     Given que o usuário está na página de login
+    
     When o usuário insere "standard_user" no campo de usuário
+    
     And insere "secret_sauce" no campo de senha
+    
     And clica no botão "Login"
+    
     Then o usuário é redirecionado para a página de produtos.*
 
   >* Scenario: Login com credenciais inválidas
