@@ -36,7 +36,7 @@
 **Feature: Produtos**
 
   >* Scenario: Listar todos os produtos
->  * 
+
     Given que o usuário está na página de produtos
 
     When a página é carregada
