@@ -10,14 +10,14 @@
     And clica no botão "Login"
     Then o usuário é redirecionado para a página de produtos.*
 
-  > * Scenario: Login com credenciais inválidas
+  >* Scenario: Login com credenciais inválidas
     Given que o usuário está na página de login
     When o usuário insere "usuario_invalido" no campo de usuário
     And insere "senha_errada" no campo de senha
     And clica no botão "Login"
-    Then uma mensagem de erro "Username and password do not match" é exibida .*
+    Then uma mensagem de erro "Username and password do not match" é exibida.*
 
-  Scenario: Login com campos vazios
+  >* Scenario: Login com campos vazios
     Given que o usuário está na página de login
     When o usuário clica no botão "Login" sem preencher os campos
     Then uma mensagem de erro "Username is required" é exibida*
@@ -41,21 +41,21 @@
 
 **Feature: Carrinho de compras**
 
-  Scenario: Verificar itens no carrinho após logout e login
+  >* Scenario: Verificar itens no carrinho após logout e login
     Given que o usuário adicionou itens ao carrinho
     And o usuário faz logout
     When o usuário faz login novamente
-    Then os itens no carrinho devem ser mantidos
+    Then os itens no carrinho devem ser mantidos *
 
-  Scenario: Realizar checkout com sucesso
+  >* Scenario: Realizar checkout com sucesso
     Given que o usuário adicionou itens ao carrinho
     And o usuário acessa a página do carrinho
     When o usuário clica em "Checkout"
     And preenche os campos obrigatórios "First Name", "Last Name", e "Postal Code"
     And clica em "Continue" e depois "Finish"
-    Then uma mensagem "Thank you for your order!" é exibida
+    Then uma mensagem "Thank you for your order!" é exibida *
 
-  Scenario: Finalizar compra com campos obrigatórios ausentes
+ >* Scenario: Finalizar compra com campos obrigatórios ausentes
     Given que o usuário adicionou itens ao carrinho
     And o usuário acessa a página do carrinho
     When o usuário clica em "Checkout"
@@ -65,13 +65,13 @@
 
 > *Feature: Performance do site*
 
-  Scenario: Tempo de carregamento da página inicial
+ >* Scenario: Tempo de carregamento da página inicial
     Given que o usuário acessa o site
     When a página inicial é carregada
-    Then o tempo de carregamento deve ser inferior a 3 segundos
+    Then o tempo de carregamento deve ser inferior a 3 segundos *
 
-  Scenario: Redimensionamento em dispositivos móveis
+ >* Scenario: Redimensionamento em dispositivos móveis
     Given que o usuário acessa o site em diferentes dispositivos
     When o tamanho da tela é alterado
-    Then o layout deve se ajustar corretamente ao dispositivo
+    Then o layout deve se ajustar corretamente ao dispositivo *
 
