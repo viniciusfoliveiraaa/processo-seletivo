@@ -2,19 +2,19 @@
  **Cenários em BDD**
 > *Feature: Login
 
-  Scenario: Login com credenciais válidas
+ > * Scenario: Login com credenciais válidas
     Given que o usuário está na página de login
     When o usuário insere "standard_user" no campo de usuário
     And insere "secret_sauce" no campo de senha
     And clica no botão "Login"
-    Then o usuário é redirecionado para a página de produtos
+    Then o usuário é redirecionado para a página de produtos.*
 
-  Scenario: Login com credenciais inválidas
+  > * Scenario: Login com credenciais inválidas
     Given que o usuário está na página de login
     When o usuário insere "usuario_invalido" no campo de usuário
     And insere "senha_errada" no campo de senha
     And clica no botão "Login"
-    Then uma mensagem de erro "Username and password do not match" é exibida
+    Then uma mensagem de erro "Username and password do not match" é exibida .*
 
   Scenario: Login com campos vazios
     Given que o usuário está na página de login
