@@ -21,7 +21,7 @@
     When o usuário clica no botão "Login" sem preencher os campos
     Then uma mensagem de erro "Username is required" é exibida*
 
-> *Feature: Produtos
+> *Feature: Produtos *
 
   Scenario: Listar todos os produtos
     Given que o usuário está na página de produtos
@@ -36,9 +36,9 @@
   Scenario: Ordenar produtos por preço (do menor para o maior)
     Given que o usuário está na página de produtos
     When o usuário seleciona "Price (low to high)" na opção de ordenação
-    Then os produtos são exibidos em ordem crescente de preço*
+    Then os produtos são exibidos em ordem crescente de preço
 
-> *Feature: Carrinho de compras
+>* Feature: Carrinho de compras*
 
   Scenario: Verificar itens no carrinho após logout e login
     Given que o usuário adicionou itens ao carrinho
@@ -62,7 +62,7 @@
     Then uma mensagem de erro "Error: First Name is required" é exibida*
 
 
-> *Feature: Performance do site
+> *Feature: Performance do site*
 
   Scenario: Tempo de carregamento da página inicial
     Given que o usuário acessa o site
@@ -72,5 +72,5 @@
   Scenario: Redimensionamento em dispositivos móveis
     Given que o usuário acessa o site em diferentes dispositivos
     When o tamanho da tela é alterado
-    Then o layout deve se ajustar corretamente ao dispositivo*
+    Then o layout deve se ajustar corretamente ao dispositivo
 
