@@ -63,7 +63,7 @@
     Then uma mensagem de erro "Error: First Name is required" é exibida*
 
 
-> *Feature: Performance do site*
+**Feature: Performance do site**
 
  >* Scenario: Tempo de carregamento da página inicial
     Given que o usuário acessa o site
