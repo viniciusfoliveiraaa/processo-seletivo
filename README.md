@@ -22,24 +22,24 @@
     When o usuário clica no botão "Login" sem preencher os campos
     Then uma mensagem de erro "Username is required" é exibida*
 
-> *Feature: Produtos *
+**Feature: Produtos**
 
-  Scenario: Listar todos os produtos
+  >* Scenario: Listar todos os produtos
     Given que o usuário está na página de produtos
     When a página é carregada
-    Then todos os produtos disponíveis são exibidos com nome, preço e imagem
+    Then todos os produtos disponíveis são exibidos com nome, preço e imagem*
 
-  Scenario: Adicionar um produto ao carrinho
+  >* Scenario: Adicionar um produto ao carrinho
     Given que o usuário está na página de produtos
     When o usuário clica no botão "Add to cart" do produto "Sauce Labs Backpack"
-    Then o contador do carrinho exibe "1"
+    Then o contador do carrinho exibe "1" *
 
-  Scenario: Ordenar produtos por preço (do menor para o maior)
+ >* Scenario: Ordenar produtos por preço (do menor para o maior)
     Given que o usuário está na página de produtos
     When o usuário seleciona "Price (low to high)" na opção de ordenação
-    Then os produtos são exibidos em ordem crescente de preço
+    Then os produtos são exibidos em ordem crescente de preço*
 
->* Feature: Carrinho de compras*
+**Feature: Carrinho de compras**
 
   Scenario: Verificar itens no carrinho após logout e login
     Given que o usuário adicionou itens ao carrinho
